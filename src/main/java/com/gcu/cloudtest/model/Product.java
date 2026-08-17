@@ -18,6 +18,9 @@ public class Product {
     private String category;
     private double price;
     private int quantity;
+    private String sku;
+    private String description;
+    
 
     public Product() {
     }
@@ -35,6 +38,22 @@ public class Product {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getSku() {
+        return sku;
+    }
+
+    public void setSku(String sku) {
+        this.sku = sku;
+    }
+    
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getName() {
